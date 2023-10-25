@@ -1,0 +1,55 @@
+* {
+  /* ova zvezdica se vodi na sve html elemente */
+  /* !RELATIV I STICKY SU SLICNI, A ABSOLUTLY I STATIC SU SLICNI! */
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: 20px;
+  background-color: #009e9e;
+  height: 200vh;
+  padding-top: 15px;
+  position: relative;
+}
+
+.child1 {
+  background-color: rgb(0, 47, 255);
+  height: 50px;
+  /* width: 50vw; */
+  /* position: relative; nam otvara 4 nove mogucnosti top right left i botton*/
+  /* position: static; defoltna vrednost za position */
+  /* position: relative;
+  top: 20px;
+  position: left; */
+  /* visible hidden sakriva prostor a ujedno cuva element */
+  /* position: absolute; se pomera u odnosu na nas body, na nas ceo ekran */
+  position: absolute;
+  /* left: 100px; */
+  bottom: 50px;
+  right: 100px;
+}
+
+.child2 {
+  background-color: #fffb00;
+  height: 50px;
+  position: fixed;
+  /* kod fixed se uvek pomera u odnosu na ceo ekran */
+  /* razlika izmedju fixed i absoluty jeste ta sto se fixed fiksira i odnosi na ceo ekran, dok se absoluty odnosi samo na taj deo ekrana */
+  top: 0px;
+  left: 50%;
+  z-index: 5;
+  /* z-index: 5; stavimo z-index ako zelimo da taj deo ima prednost, u odnosu na ostale*/
+}
+
+.child3 {
+  background-color: blueviolet;
+  height: 50px;
+  position: sticky;
+  top: 20px;
+}
+
+.child4 {
+  background-color: chocolate;
+  height: 50px;
+}

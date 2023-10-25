@@ -1,0 +1,30 @@
+.ja {
+  width: 400px;
+  height: 400px;
+  /* background-color: bisque; */
+  background-image: url(https://cdn.wallpapersafari.com/67/92/sIP846.jpg);
+  /* background-repeat: repeat; defaulutna vrednost */
+  /* background-repeat: no-repeat; */
+  /* background-size:contain: razvlaci se fotografija do momenta dok ne stigne do prve ivice; */
+  /* background-size:cover ;razvlaci se fotografija kako bi prekrila ceo kontejner (gubi se deo fotografije) */
+  /* background-size: 300px 300px; */
+  /* background-size:100% 100% ide preko cele fotografije, a ne gubimo pola fotografije */
+  overflow: auto;
+  padding: 15px;
+}
+.ja h1,
+p {
+  color: rgb(0, 0, 0);
+  /* line-height: 30px; ovo je razmak izmedju redova */
+  letter-spacing: 2px;
+}
+.ja h1 {
+  text-align: center;
+}
+* {
+  margin: 0px;
+}
+.ja:nth-of-type(2) {
+  box-sizing: border-box;
+  padding: 15px;
+}

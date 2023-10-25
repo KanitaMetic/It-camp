@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      body {
+        background-color: cadetblue;
+      }
+      h1 {
+        /* h1 predstavlja css selektor, sto je zapravo pravilo pomocu kojeg pristupamo html elementu 
+      za koji zelimo da definisemo stilove */
+        color: rgb(125, 5, 125);
+        /* color predstavlja css property(svojstvo) */
+      }
+      p {
+        /* font-size: 16px; standarna velicina slova je 16px */
+        font-size: 18px;
+        text-indent: 40px;
+        /* text-indent je svojstvo koje ce prvi red da uvuce u odnosu na ostali deo teksta. Kao pismeni u skoli! */
+        /* text-align: left; je defaulutna vrednost */
+        text-align: right;
+        /* text-align: center; primenice se poslednje definisano svojstvo */
+        text-align: center;
+        text-align: justify;
+        /* text align justify je svojstvo da bude ravno i s desne i s leve strane */
+        text-align-last: right;
+        text-transform: uppercase;
+        /* text-transform uppercase je svojstvo koje ce da napravi ceo tekst velikim slovima */
+        text-transform: capitalize;
+        /* text transform capitalize je svojstvo koje pravi da svaka rec u tekstu bude velikim slovom. */
+        text-transform: none;
+        /* text transform none je svojstvo koje ne radi nista, ostavlja tekst kakav je i bio */
+        text-transform: lowercase;
+        /* text transform lowercase je svojstvo koje ce da napravi ceo tekst malim slovima. */
+      }
+      ul {
+        list-style-position: inside;
+        /* tacka ili broj se takodje pomeraju, uz tekst */
+      }
+      .prvi {
+        /* tacka ide kada zelimo da promenimo samo jedan div */
+        background-color: rgb(97, 190, 190);
+        width: 580px;
+        height: 400px;
+      }
+      #naslov {
+        color: rgb(211, 138, 12);
+      }
+      /* id ima prioritet u odnosu na klasu kada se radi o primeni stilova neki jedinstven element, tj taj id se nece ponavljati, dok se klasa moze iskoristiti na vise nacina*/
+      /* obicno cemo koristiti id ako zelimo da definisemo  */
+      #naslov {
+        color: rgb(28, 25, 193);
+      }
+      /* kad je id onda ispred stavljamo #, a kad je klasa onda ide . ispred */
+    </style>
+  </head>
+  <body>
+    <div class="prvi">
+      <h1>
+        Danas radimo CSS(Cascadin Style Sheets) <br />
+        18.09.2023
+      </h1>
+      <!-- Jezik za definisanje stilova na nasoj stranici -->
+      <h2 id="naslov" class="naslov">
+        --CSS mozemo primeniti na nekoliko nacina--
+      </h2>
+      <ul>
+        <li style="color: blue; text-align: center">Inline stilovi</li>
+        <li>Stilovi definisani unutar head taga</li>
+        <li>Eksterni stilovi</li>
+      </ul>
+      <ol>
+        <li style="color: rgb(120, 35, 120)">Inline stilovi</li>
+        <li>Stilovi definisani unutar head taga</li>
+        <li>Eksterni stilovi</li>
+      </ol>
+    </div>
+    <div>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+        animi, praesentium quos ratione rerum provident pariatur fugit quidem
+        quisquam officiis iure iusto enim quibusdam ut?
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        nobis. Voluptas pariatur eligendi minus id nemo aspernatur dicta fuga
+        soluta, placeat in laborum nulla animi consequatur hic sed totam neque
+        aut! Corporis error similique iste amet laborum culpa deserunt esse
+        cumque nulla eum commodi delectus officiis, tempore asperiores, magni
+        autem. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Eligendi alias earum voluptatem. Odio ab velit dolor accusamus deleniti
+        tenetur suscipit soluta sapiente. Nam voluptas hic culpa fugit
+        repellendus. Quasi sunt odio facere doloremque, soluta, sint quod
+        similique incidunt ipsum praesentium velit. Quasi sit cupiditate cumque
+        iste aut voluptatem sapiente amet!
+      </p>
+    </div>
+  </body>
+</html>

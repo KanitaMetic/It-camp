@@ -1,0 +1,59 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(53, 170, 188);
+}
+.child {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(122, 70, 70);
+  /* transition: transform 1s linear;
+  transition: transform 1s ease;
+  transition: transform 1s ease-in-out; */
+
+  /* transition: transform all cubic-bezier(0.94, -0.62, 0.76, 4.09); */
+  transition: all cubic-bezier(0.94, -0.62, 0.76, 4.09) 1s;
+}
+
+.parent:hover .child {
+  /* float: right; */
+  /* transform: translateX(100%) transformacija po Y osi;
+  transform: translateY(100%); */
+  /* transform: translate(100%); */
+  /* transform: translate(100%, 100%);transformacija po x i y osi */
+  /* transform: scale(1.2); POVECANJE ELEMENTA
+  transform: scale(0.8); SMANJENJE ELEMENTA
+  transform: scale(0.8, 1.2); -PROMENA PO SIRINI I VISINI- */
+  background-color: antiquewhite;
+  animation: left-to-right 1s ease-in-out 0.1s forwards 3 alternate;
+  /*  forwards DA OSTANE NA ISTO MESTO */
+}
+
+@keyframes left-to-right {
+  20% {
+    transform: translate(100%, 0);
+    background-color: aquamarine;
+  }
+  40% {
+    transform: translate(50%, 50%);
+    background-color: rgb(204, 145, 145);
+  }
+  66% {
+    transform: translate(100%, 100%);
+    background-color: rgb(146, 106, 184);
+  }
+  80% {
+    transform: translate(0, 100%);
+    background-color: blue;
+  }
+  100% {
+    transform: translate(0, 100%);
+  }
+}

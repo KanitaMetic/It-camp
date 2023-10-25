@@ -1,0 +1,52 @@
+.main {
+  margin-left: 30px;
+  width: 400px;
+  height: 600px;
+  background-color: aqua;
+  text-align: center;
+  border: solid black;
+  border-radius: 10px;
+  margin: 50px auto;
+  box-shadow: 20px 20px 10px rgb(18, 31, 36);
+  /* overflow: hidden; SAKRIVA SE SADRZAJ KOJI PRELAZI ELEMENT */
+  /* overflow: scroll; kreira skrol bar kako bismo mogli da vidimo ceo tekst dok skrolamo */
+  /* overflow: hidden; nista ne menja */
+  /* overflow: auto; je najbolja opcija, jer ako treba skrol primenit ce se, a ako ne treba, nece se primeniti */
+  display: inline-block;
+  /* display: block; */
+}
+/* Block level html elementi: */
+/* od h1, do h6 */
+/* <p> */
+/* <div> <main> <article> <section> <header> <footer> */
+/* <ol>, <ul>,<li> */
+/* Inline html elementi: */
+/* <input>, <a>, <span>, <button> <textarea> */
+/* <img> tag je inline-block element - to su elementi koji dozvoljavaju definisanje sirine i visine za razliku od inline elemenata.*/
+/* <img> */
+.main:nth-of-type(2) {
+  display: none;
+  /* display:none sakriva npr. jednu karticu, a ostalo da ostane */
+}
+.ja {
+  text-transform: capitalize;
+  font-size: large;
+  padding: auto;
+}
+.e {
+  text-align: justify;
+  padding: 10px;
+  text-indent: 16px;
+}
+/* visibility: hidden sakriva element i prostor ostaje rezervisan za taj element. */
+/* visibilty: hidden  */
+body :hover {
+  background-color: burlywood;
+}
+/* .main :hover {
+  content: url(https://pierretravel.rs/media/sys/region/image/mini-odmor_francuska_pariz.jpg);
+  width: 400px;
+  height: 200px;
+} */
+/* ako zelimo da promenimo sliku kad prodjemo misem, kao sto je slucaj sa bojama, onda dodajemo u stil hover, tj
+npr main.hover */
