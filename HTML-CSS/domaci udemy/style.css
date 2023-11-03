@@ -11,7 +11,7 @@
   position: sticky;
   background-color: white;
   top: 0px;
-  z-index: 15px;
+  z-index: 15;
 }
 .header2 {
   height: 35px;
@@ -21,7 +21,7 @@
   position: sticky;
   background-color: white;
   top: 43px;
-  z-index: 15px;
+  z-index: 15;
 }
 .udemyslika {
   width: 110px;
@@ -98,7 +98,7 @@
   left: 0px;
   clear: both;
   border: solid 0.5px lightgray;
-  z-index: 5px;
+  z-index: 5;
 }
 .satic {
   width: 70px;
@@ -145,7 +145,7 @@
   margin-top: 0px;
   border: solid 0.5px lightgray;
   padding: 10px;
-  z-index: 5px;
+  z-index: 5;
 }
 .knjige {
   height: 70px;
@@ -186,7 +186,7 @@
   font-size: 13px;
   color: gray;
 }
-.elma {
+.kanita {
   margin-left: 160px;
 }
 .child3 {
@@ -198,7 +198,7 @@
   left: 600px;
   top: 0px;
   z-index: 5px;
-  padding: 10px;
+  padding: 10;
 }
 .news {
   height: 70px;
