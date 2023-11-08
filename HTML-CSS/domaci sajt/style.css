@@ -36,3 +36,17 @@ header {
   font-size: 15px;
   gap: 25px;
 }
+.parent {
+  background-color: antiquewhite;
+  width: 2000px;
+  height: 200hv;
+}
+.child1 {
+  width: 405px;
+  height: 400px;
+  grid-area: prvi;
+  margin-top: 100px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
