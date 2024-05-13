@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Početna</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+   
+    form {
+      max-width: 600px; 
+      margin: 0 auto; 
+    }
+
+ 
+    label {
+      display: block;
+      width: 20%; 
+      text-align: left; 
+      float: left; 
+    }
+
+   
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 75%; 
+      padding: 10px; 
+      margin-bottom: 10px; 
+    }
+
+    
+    input[type="submit"] {
+      margin: 20px auto;
+      padding: 10px 30px;
+      font-size: 16px;
+      background-color: #c8ff00; 
+      border-radius: 16px; 
+      border: 1px solid #d0ff00; 
+      color: #000; 
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #73ffa9; 
+      cursor: pointer; 
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="pocetna.html">Početna</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="naslov">Login</h1>
+    <div class="main-kontakt">
+      <form action method="get">
+        <label for="ime">Email:</label>
+        <input type="text" id="email" name="email" required /><br />
+
+        <label for="pasword">Pasword:</label>
+        <input type="text" id="pasword" name="pasword" required /><br />
+
+        <p>
+          Ostanite ulogovani
+          <input
+            type="checkbox"
+            id="direktor"
+            name="primaoc"
+            value="direktor"
+          />
+        </p>
+
+        <input type="submit" value="Pošalji" />
+      </form>
+    </div>
+  </body>
+</html>
+
+  </body>
+</html>

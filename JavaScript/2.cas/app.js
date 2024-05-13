@@ -19,7 +19,7 @@ console.log(typeof "Ovo je nas prvi string.");
 console.log(25);
 console.log(typeof 25);
 
-// 1.3. BigInt - Brojevi koji prelaze granivce obicnih brojeva.
+// 1.3. BigInt - Brojevi koji prelaze granice obicnih brojeva.
 
 console.log(BigInt(28374562987345629837465298736458723465872346));
 console.log(typeof BigInt(28374562987345629837465298736458723465872346));
